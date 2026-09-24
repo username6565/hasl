@@ -1,0 +1,12 @@
+name: Upload Cache
+on: workflow_dispatch
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download and Release
+      run: |
+        wget -O cache.zip https://yandexcloud.net
+        gh release create v2.0.0 cache.zip --title "Server Cache" --notes "Fast download mirror"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
