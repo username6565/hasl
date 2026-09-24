@@ -6,6 +6,7 @@
     "port": 4351,
     "online": 0,
     "max_online": 100,
-    "url": "https://blackrussia.online"
+    "url": "https://blackrussia.online",
+    "version": "1.0.0"
   }
 ]
